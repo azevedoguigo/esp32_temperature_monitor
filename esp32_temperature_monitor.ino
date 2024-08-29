@@ -39,7 +39,7 @@ void setup() {
   }
   Serial.println("WiFi connected!");
 
-  String ws_url = "ws://" + String(WEBSOCKETS_SERVER_HOST) + ":" + String(WEBSOCKETS_SERVER_PORT) + "/ws";
+  String ws_url = "ws://" + String(WEBSOCKETS_SERVER_HOST) + ":" + String(WEBSOCKETS_SERVER_PORT) + "/send-temperature";
 
   bool connected = client.connect(ws_url);
   if (connected) {
