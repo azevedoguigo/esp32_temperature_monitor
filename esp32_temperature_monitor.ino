@@ -77,5 +77,5 @@ void loop() {
   }
 
   client.poll();
-  delay(2000);
+  delay(120000);
 }
